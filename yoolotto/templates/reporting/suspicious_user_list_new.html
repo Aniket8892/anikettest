@@ -1,0 +1,365 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+{% get_static_prefix as STATIC %}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- Bootstrap Core CSS -->
+	<link href="{{STATIC}}css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- Custom CSS -->
+	<link href="{{STATIC}}css/style.css" rel='stylesheet' type='text/css' />
+	<!-- font CSS -->
+	<!-- font-awesome icons -->
+	<link href="{{STATIC}}css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome icons -->
+	<!-- js-->
+	<script src="{{STATIC}}js/jquery-1.11.1.min.js"></script>
+	<script src="{{STATIC}}js/modernizr.custom.js"></script>
+	<!--webfonts-->
+	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<!--//webfonts-->
+	<!--animate-->
+	<link href="{{STATIC}}css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="{{STATIC}}js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+	<!--//end-animate-->
+	<!-- Metis Menu -->
+	<script src="{{STATIC}}js/metisMenu.min.js"></script>
+	<script src="{{STATIC}}js/custom.js"></script>
+	<link href="{{STATIC}}css/custom.css" rel="stylesheet">
+    <link href="{{STATIC}}css/bootstrap-datetimepicker.css" rel="stylesheet">
+	<!--//Metis Menu -->
+	</head>
+	<body class="cbp-spmenu-push">
+<div class="main-content"> 
+      <!--left-fixed -navigation-->
+      <div class=" sidebar" role="navigation">
+    <div class="navbar-collapse">
+          <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+        <ul class="nav" id="side-menu">
+              <li> <a href="/reporting/suspect/"><i class="fa fa-home nav_icon"></i>Dashboard</a> </li>
+              <li> <a href="widgets.html"><i class="fa fa-line-chart nav_icon"></i>Reports</a> </li>
+              <li> <a href="tables.html"><i class="fa fa-gears nav_icon"></i>Miscellaneous</a> </li>
+            </ul>
+        <div class="clearfix"> </div>
+        <!-- //sidebar-collapse --> 
+      </nav>
+        </div>
+  </div>
+      <!--left-fixed -navigation--> 
+      <!-- header-starts -->
+      <div class="sticky-header header-section ">
+    <div class="header-left"> 
+          <!--toggle button start-->
+          <button id="showLeftPush"><i class="fa fa-bars"></i></button>
+          <!--toggle button end--> 
+          <!--logo -->
+          <div class="logo"> <a href="/reporting/suspect/"> <img src="{{STATIC}}images/logo.png" alt="Yoolotto"> </a> </div>
+          <!--//logo--> 
+          <!--search-box--> 
+          <!--<div class="search-box">
+					<form class="input">
+						<input class="sb-search-input input__field--madoka" placeholder="Search..." type="search" id="input-31" />
+						<label class="input__label" for="input-31">
+							<svg class="graphic" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
+								<path d="m0,0l404,0l0,77l-404,0l0,-77z"/>
+							</svg>
+						</label>
+					</form>
+				</div>--> 
+          <!--//end-search-box-->
+          <div class="clearfix"> </div>
+        </div>
+    <div class="header-right">
+          <div class="profile_details_left"><!--notifications of menu start -->
+        <ul class="nofitications-dropdown">
+              <li class="dropdown head-dpdn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell"></i><span class="badge blue">3</span></a>
+            <ul class="dropdown-menu">
+                  <li>
+                <div class="notification_header">
+                      <h3>You have 3 new notification</h3>
+                    </div>
+              </li>
+                  <li><a href="#">
+                    <div class="user_img"><img src="{{STATIC}}images/2.png" alt=""></div>
+                    <div class="notification_desc">
+                    <p>Lorem ipsum dolor amet</p>
+                    <p><span>1 hour ago</span></p>
+                  </div>
+                    <div class="clearfix"></div>
+                    </a></li>
+                  <li class="odd"><a href="#">
+                    <div class="user_img"><img src="{{STATIC}}images/1.png" alt=""></div>
+                    <div class="notification_desc">
+                    <p>Lorem ipsum dolor amet </p>
+                    <p><span>1 hour ago</span></p>
+                  </div>
+                    <div class="clearfix"></div>
+                    </a></li>
+                  <li><a href="#">
+                    <div class="user_img"><img src="{{STATIC}}images/3.png" alt=""></div>
+                    <div class="notification_desc">
+                    <p>Lorem ipsum dolor amet </p>
+                    <p><span>1 hour ago</span></p>
+                  </div>
+                    <div class="clearfix"></div>
+                    </a></li>
+                  <li>
+                <div class="notification_bottom"> <a href="#">See all notifications</a> </div>
+              </li>
+                </ul>
+          </li>
+            </ul>
+        <div class="clearfix"> </div>
+      </div>
+          <!--notification menu end -->
+          <div class="profile_details">
+        <ul>
+              <li class="dropdown profile_details_drop"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <div class="profile_img"> <span class="prfil-img"><img src="{{STATIC}}images/a.png" alt=""> </span>
+                <div class="user-name">
+                    <p>Welcome,{{admin}}</p>
+                    <span>Administrator</span> </div>
+                <i class="fa fa-angle-down lnr"></i> <i class="fa fa-angle-up lnr"></i>
+                <div class="clearfix"></div>
+              </div>
+                </a>
+            <ul class="dropdown-menu drp-mnu">
+                  <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
+                  <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
+                  <li> <a href="/reporting/logout"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                </ul>
+          </li>
+            </ul>
+      </div>
+          <div class="clearfix"> </div>
+        </div>
+    <div class="clearfix"> </div>
+  </div>
+      <!-- //header-ends --> 
+      <!-- main content start-->
+      <div id="page-wrapper">
+    <div class="main-page">
+          <div class="tables">
+        <h3 class="title1">Suspicious User List</h3>
+        <!-- <h2>Admin: {{admin}}</h2> -->
+        <div class="form-two widget-shadow">
+              <div class="form-body">
+            <div class="row">
+                  <div class="col-md-12">
+                <h4>Filters</h4>
+              </div>
+                </div>
+            <div class="row">
+                  <div class="col-md-12">
+                <form class="form-inline" method="POST">{% csrf_token %}
+                      <div class="form-group">
+                    <label>Email Id</label>
+                    <input class="form-control" id="" placeholder="Email" name="email_id" type="email">
+                  </div>
+                      <div class="form-group">
+                      <label>Date Range</label>
+                    <div data-link-field="dtp_input1" data-date-format="yyyy-mm-dd" data-date="2017-03-27" class="input-group date form_datetime">
+							<input type="text" placeholder="Select Date" name="start_date" value="" size="16" class="form-control">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+						</div>
+                  </div>
+                      <div class="form-group mgTop25">
+                    <div>to</div>
+                  </div>
+                      <div class="form-group mgTop25">
+                    <div data-link-field="dtp_input1" data-date-format="yyyy-mm-dd" data-date="2017-03-29" class="input-group date form_datetime">
+							<input type="text" placeholder="Select Date" name="end_date" value="" size="16" class="form-control">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+						</div>
+                  </div>
+                      <div class="form-group">
+                    <label>Status</label>
+                    <select class="form-control">
+                          <option>-- Please Select --</option>
+                          <option>Block</option>
+                          <option>Unblock</option>
+                        </select>
+                  </div>
+                      <button type="submit" class="btn btn-default mgTop25">Submit</button>
+                    </form>
+              </div>
+                </div>
+          </div>
+            </div>
+        <div class="bs-example widget-shadow">
+              <div class="row">
+            <div class="col-md-12">
+                  <h4>User List</h4>
+                </div>
+          </div>
+              
+              <!--search-box-->
+              <div class="row">
+            <div class="col-md-12">
+                  <div class="search-box pull-right">
+                <form class="input">
+                      <input class="sb-search-input " placeholder="Search..." type="search" id="" />
+                      <label class="input__label" for=""></label>
+                    </form>
+              </div>
+                </div>
+          </div>
+              <!--//end-search-box-->
+       <div class="row">
+            <div class="col-md-12">
+                  <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                      <thead>
+                    <tr>
+                          <!-- <th>S. No.</th> -->
+                          <th>Email Id</th>
+                          <th>Device Id</th>
+                          <th>Reason to block</th>
+                          <th>View Details</th>
+                          <th></th>
+                        </tr>
+                  </thead>
+                      <tbody>
+                        {% for user in users %}
+                        <tr>
+                          <!-- <th scope="row">1</th> -->
+                          <td>{{user.email}}</td>
+                          <td><a href="suspect_details_device/{{user.device_key}}">{{user.device_id}}</a></td>
+                          <td>{{user.reason}}</td>
+                          <td><a href="suspect_details_email/{{user.email_key}}"><i class="fa fa-eye"></i></a></td> 
+                          <td><form action="block_details/" method="POST">{% csrf_token %}
+                          <input type="hidden" value="{{user.email_key}}" name="key">
+                          <input type="submit" class="btn btn-default mgTop1" value="Block" />
+                          </form></td>
+
+                        </tr>
+                        {% endfor %}
+                   
+                  </tbody>
+                    </table>
+              </div>
+                </div>
+          </div>
+          
+          		<div class="row">
+                	<div class="col-md-6">
+                    	<!-- Showing 1 to 8 of 50 entries -->
+                    </div>
+                    
+                    <div class="col-md-6 text-right">
+                    	<nav>
+              						{% if users.has_other_pages %}
+                          <ul class="pagination">
+                            {% if users.has_previous %}
+                              <li><a href="?page={{users.previous_page_number}}">&laquo;</a></li>
+                            {% else %}
+                              <li class="disabled"><span>&laquo;</span></li>
+                            {% endif %}
+                            {% for i in users.paginator.page_range %}
+                              {% if users.number == i %}
+                                <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                              {% else %}
+                                <li><a href="?page={{ i }}">{{ i }}</a></li>
+                              {% endif %}
+                            {% endfor %}
+                            {% if users.has_next %}
+                              <li><a href="?page={{ users.next_page_number }}">&raquo;</a></li>
+                            {% else %}
+                              <li class="disabled"><span>&raquo;</span></li>
+                            {% endif %}
+                          </ul>
+                          {% endif %}
+          						</nav>
+                    </div>
+                </div>
+                
+            </div>
+      </div>
+        </div>
+  </div>
+      <!--footer-->
+      <div class="footer">
+    <p>&copy; 2017 Yoolotto. All Rights Reserved.</p>
+  </div>
+      <!--//footer--> 
+    </div>
+<!-- Classie --> 
+<script src="{{STATIC}}js/classie.js"></script> 
+<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+				
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script> 
+<!--scrolling js--> 
+<script src="{{STATIC}}js/jquery.nicescroll.js"></script> 
+<script src="{{STATIC}}js/scripts.js"></script> 
+<!--//scrolling js--> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="{{STATIC}}js/bootstrap.js"> </script>
+
+<script type="text/javascript" src="{{STATIC}}js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="{{STATIC}}js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+		$('.form_datetime').datetimepicker({
+			//language:  'fr',
+			weekStart: 1,
+			todayBtn:  1,
+			autoclose: 1,
+			todayHighlight: 1,
+			startView: 2,
+			forceParse: 0,
+			showMeridian: 1
+		});
+		$('.form_date').datetimepicker({
+			language:  'fr',
+			weekStart: 1,
+			todayBtn:  1,
+			autoclose: 1,
+			todayHighlight: 1,
+			startView: 2,
+			minView: 2,
+			forceParse: 0
+		});
+		$('.form_time').datetimepicker({
+			language:  'fr',
+			weekStart: 1,
+			todayBtn:  1,
+			autoclose: 1,
+			todayHighlight: 1,
+			startView: 1,
+			minView: 0,
+			maxView: 1,
+			forceParse: 0
+		});
+	</script>
+</body>
+</html>
